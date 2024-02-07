@@ -1,30 +1,31 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
+.NumberGenerator {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #282c34;
   color: white;
+  margin: 20px;
 }
 
-h1 {
-  color: #61dafb;
-}
-
-a {
-  display: inline-block;
-  margin-top: 20px;
+.NumberGenerator button {
   padding: 10px 20px;
+  margin-top: 20px;
   color: #282c34;
   background-color: #61dafb;
+  border: none;
   border-radius: 5px;
-  text-decoration: none;
+  cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-a:hover {
+.NumberGenerator button:hover {
   background-color: #34c9eb;
+}
+
+.NumberGenerator p {
+  margin-top: 20px;
+  color: #61dafb;
 }
