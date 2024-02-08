@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import NumberGenerator from "./components/NumberGenerator";
+import PasswordGenerator from "./components/PasswordGenerator";
 import "./App.css";
 
 function HomePage() {
@@ -18,7 +18,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/number-generator" element={<NumberGenerator />} />
+          <Route path="/number-generator" element={<PasswordGenerator />} />
         </Routes>
       </div>
     </Router>

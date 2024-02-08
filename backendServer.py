@@ -6,10 +6,10 @@ from flask import jsonify
 app = Flask(__name__)
 
 
-@app.route("/generate_number", methods=["GET"])
-def generate_number():
-    length = random.randint(1, 12)
-    characters = string.ascii_letters + string.digits
+@app.route("/generate_password", methods=["GET"])
+def generate_password():
+    length = random.randint(8, 12)
+    characters = string.ascii_letters + string.digits + string.punctuation
     result = "".join(random.choice(characters) for _ in range(length))
 
     response = {"result": result}
